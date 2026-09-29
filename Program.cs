@@ -55,6 +55,7 @@ internal static class Program
         new(16, "Refleksja i atrybuty", ReflectionAttributesExample.Run),
         //new(17, "Komunikacja rozproszona: WCF i Web API", DistributedCommunicationExample.Run),
         new(18, "Programowanie współbieżne: ThreadPool, Task, TPL i PLINQ", ConcurrentProgrammingExample.Run),
+        new(118, "Zadanie z współbieżności", ConcurrentProgrammingExample2.Run),
         new(19, "Modele asynchroniczne APM, EAP i TAP", AsyncPatternsExample.Run),
         new(20, "Programowanie aspektowe AOP", AspectOrientedProgrammingExample.Run),
         new(21, "Programowanie funkcyjne", FunctionalProgrammingExample.Run),
