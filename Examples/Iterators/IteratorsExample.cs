@@ -4,7 +4,7 @@ namespace DotNet10ExamplesStarter.Examples.Iterators;
 
 internal static class IteratorsExample
 {
-    public static void Run()
+    public static async Task Run()
     {
         //Console.WriteLine(string.Join(", ", Fibonacci(7)));
 

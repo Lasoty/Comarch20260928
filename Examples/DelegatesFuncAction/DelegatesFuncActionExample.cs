@@ -2,7 +2,7 @@ namespace DotNet10ExamplesStarter.Examples.DelegatesFuncAction;
 
 internal static class DelegatesFuncActionExample
 {
-    public static void Run()
+    public static async Task Run()
     {
         PriceRule rule = AddVat;
         rule += AddServiceFee;

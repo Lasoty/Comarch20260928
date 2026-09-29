@@ -71,7 +71,7 @@ internal static class Program
         new(32, "Słowo kluczowe field (C# 14)", FieldKeywordExample.Run)
     ];
 
-    private static void Main()
+    private static async Task Main()
     {
         while (true)
         {
@@ -95,7 +95,7 @@ internal static class Program
                     Console.WriteLine($"{selectedExample.Number}. {selectedExample.Title}");
                     Console.WriteLine();
 
-                    selectedExample.Run();
+                    await selectedExample.Run();
 
                     Console.WriteLine();
                     Console.WriteLine("Naciśnij Enter, aby wrócić do menu...");
@@ -133,4 +133,4 @@ internal static class Program
     }
 }
 
-internal sealed record ExampleMenuItem(int Number, string Title, Action Run);
+internal sealed record ExampleMenuItem(int Number, string Title, Func<Task> Run);

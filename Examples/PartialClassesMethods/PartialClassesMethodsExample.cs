@@ -2,7 +2,7 @@ namespace DotNet10ExamplesStarter.Examples.PartialClassesMethods;
 
 internal static class PartialClassesMethodsExample
 {
-    public static void Run()
+    public static async Task Run()
     {
         Employee employee = new("Jan");
         employee.Rename("Jan Kowalski");

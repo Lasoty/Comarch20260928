@@ -4,7 +4,7 @@ namespace DotNet10ExamplesStarter.Examples.LambdaClosuresExpressionTrees;
 
 internal static class LambdaClosuresExpressionTreesExample
 {
-    public static void Run()
+    public static async Task Run()
     {
         var treeshold = 100m;
         Func<Product, bool> compiled = p => p.Price >= treeshold;

@@ -4,7 +4,7 @@ namespace DotNet10ExamplesStarter.Examples.GenericTypes;
 
 internal static class GenericTypesExample
 {
-    public static void Run()
+    public static async Task Run()
     {
         var buffer = new MyGenericArray<string>(3);
         buffer.Add("C#");

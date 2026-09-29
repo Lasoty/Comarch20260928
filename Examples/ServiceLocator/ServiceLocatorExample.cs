@@ -2,7 +2,7 @@ namespace DotNet10ExamplesStarter.Examples.ServiceLocator;
 
 internal static class ServiceLocatorExample
 {
-    public static void Run()
+    public static async Task Run()
     {
     }
 }

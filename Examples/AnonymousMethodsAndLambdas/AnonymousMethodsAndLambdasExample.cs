@@ -2,7 +2,7 @@ namespace DotNet10ExamplesStarter.Examples.AnonymousMethodsAndLambdas;
 
 internal static class AnonymousMethodsAndLambdasExample
 {
-    public static void Run()
+    public static async Task Run()
     {
         Func<int, int> old = delegate (int x) { return x * x; };
         Func<int, int> lambdaBlock = x => { return x * x; };

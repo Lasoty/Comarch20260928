@@ -4,7 +4,7 @@ namespace DotNet10ExamplesStarter.Examples.LinqRelationalXml;
 
 internal static class LinqRelationalXmlExample
 {
-    public static void Run()
+    public static async Task Run()
     {
         string[] words = ["Jeden", "Dwa", "Trzy", "Cztery", "Piec"];
 

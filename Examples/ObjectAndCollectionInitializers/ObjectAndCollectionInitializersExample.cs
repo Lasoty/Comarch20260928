@@ -4,7 +4,7 @@ namespace DotNet10ExamplesStarter.Examples.ObjectAndCollectionInitializers;
 
 internal static class ObjectAndCollectionInitializersExample
 {
-    public static void Run()
+    public static async Task Run()
     {
         Cat cat = new() { Age = 10, Name = "Fluffy" };
         List<Cat> cats = [cat, new() { Name = "Kicia", Age = 5 }];

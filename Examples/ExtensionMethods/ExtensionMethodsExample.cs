@@ -2,7 +2,7 @@ namespace DotNet10ExamplesStarter.Examples.ExtensionMethods;
 
 internal static class ExtensionMethodsExample
 {
-    public static void Run()
+    public static async Task Run()
     {
         string mojTekst = "Ala ma kota, a kot ma Alę.";
         int count = mojTekst.WordCount();
