@@ -8,7 +8,34 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="Examples\T4Templates\States.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>States.tt</DependentUpon>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="10.0.12" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Examples\T4Templates\States.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>States.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Service Include="{508349b6-6b84-4df5-91f0-309beebad82d}" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Examples\T4Templates\States.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>States.tt</DependentUpon>
+    </Compile>
   </ItemGroup>
 
 </Project>

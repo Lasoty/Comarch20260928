@@ -1,0 +1,13 @@
+﻿<#@ output extension=".cs" #>
+
+public enum States
+{
+<#
+for (int i = 0, bitValue = 1; i < 8; i++, bitValue<<=1)
+{
+#>
+	Bit<#=i #> = <#=bitValue #>,
+<#
+}
+#>
+}
